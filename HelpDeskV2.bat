@@ -1,3 +1,4 @@
+rem Testing comparing files
 if NOT EXIST c:\Helpdesk ( 
 
 mkdir c:\Helpdesk
