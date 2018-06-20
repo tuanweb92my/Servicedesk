@@ -14,7 +14,7 @@ If exist "C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" (
 
 If exist "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" (
 
-"C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" /c ipm.note /m "%2 & subject= [INC#000%3] is completed  & body= Hello user, the problem is solved.Thanks & best regards " 
+"C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.note /m "%2 & subject= [INC#000%3] is completed  & body= Hello user, the problem is solved.Thanks & best regards " 
 
 )
 
