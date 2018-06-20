@@ -112,8 +112,16 @@ rem cd "C:\Program Files (x86)\Microsoft Office\root\Office16>"
 
 rem outlook.exe /c ipm.note /m "DG-vietnam-hoc-IT@webmail.adsint.biz&subject= Request a remote access for fixing my computer issue with [ Computername : %computername% - ap\%username% ] &body= %content% " /a %var%\%computername%_%date:~4,2%-%date:~7,2%-%date:~10,4%_systeminfo.txt
 
-"C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" /c ipm.note /m "DG-vietnam-hoc-IT@webmail.adsint.biz&subject=[INC#000%nolines%] Request a remote access for fixing my computer issue with [ Computername : %computername% - ap\%username% ] &body= %content% "
+If exist "C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" (
 
+"C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" /c ipm.note /m "DG-vietnam-hoc-IT@webmail.adsint.biz&subject=[INC#000%nolines%] Request a remote access for fixing my computer issue with [ Computername : %computername% - ap\%username% ] &body= %content% "
+)
+
+If exist "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" (
+
+"C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.note /m "DG-vietnam-hoc-IT@webmail.adsint.biz&subject=[INC#000%nolines%] Request a remote access for fixing my computer issue with [ Computername : %computername% - ap\%username% ] &body= %content% "
+
+)
 
 
 rem copy %var%\Inc000%nolines%_%computername%_systeminfo.txt \\vnhocapfs101\Apps\RemoteAssistant\
