@@ -1,0 +1,3 @@
+rem RoboCopy \\vnhocapfs101\Apps\RemoteAssistant\ \\vnhocapfs101\OTHERS\RemoteAssistant\Report\ /MIR /W:0 /R:1 /Z > C:\Helpdesk\externalbackup.log
+RoboCopy \\vnhocapfs101\Apps\RemoteAssistant\ \\vnhocapfs101\OTHERS\RemoteAssistant\Report\ /E /W:0 /R:1 /Z > \\vnhocapfs101\OTHERS\RemoteAssistant\Report\backup.log
+RoboCopy \\vnhocapfs101\Apps\RemoteAssistant\ \\vnhocapfs101\OTHERS\RemoteAssistant\Backup_Report\ /E /W:0 /R:1 /Z > \\vnhocapfs101\OTHERS\RemoteAssistant\Backup_Report\backup.log
